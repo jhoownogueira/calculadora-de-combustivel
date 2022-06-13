@@ -1,14 +1,23 @@
 .inputs {
-    position: relative;
+    width: 100%;
+    max-width: 27.2rem;
+    padding: 0 3.2rem 0 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffffcc;
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     .input {
-        position: relative;
-        padding-left: 4.8rem;
+        padding-left: 1.8rem;
         width: 100%;
         max-width: 24rem;
         height: 4.8rem;
         border: 0;
         outline: 0;
-        border-bottom: 1px solid #ffffffcc;
         color: #ffffffcc;
         font-family: 'Inter', sans-serif;
         font-weight: 500;
@@ -17,12 +26,8 @@
         letter-spacing: -0.02em;
         background: transparent;
 
-
         &::placeholder {
-            bottom: 1.4rem;
-            position: absolute;
             color: #ffffff80;
-            left: 4.8rem;
         }
 
         &.gasolina {
@@ -39,17 +44,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        bottom: 1.2rem;
         width: 2.4rem;
         height: 2.4rem;
-        position: absolute;
-        left: 1.2rem;
     }
 
     label {
-        bottom: 1.4rem;
-        position: absolute;
-        right: 2rem;
         color: #ffffff80;
         font-family: 'Inter', sans-serif;
         font-weight: 500;
@@ -72,17 +71,13 @@ input[type=number] {
     width: 100%;
     max-width: 24rem;
     height: 4.8rem;
-    position: relative;
     border-bottom: 1px solid #ffffffcc;
     .icon {
         display: flex;
         justify-content: center;
         align-items: center;
-        bottom: 1.2rem;
         width: 2.4rem;
         height: 2.4rem;
-        position: absolute;
-        left: 1.2rem;
     }
     #resultado-media {
         font-family: 'Inter', sans-serif;
@@ -90,22 +85,14 @@ input[type=number] {
         font-size: 1.4rem;
         line-height: 1.7rem;
         letter-spacing: -0.02em;
-        // color: #ffffff;
-        bottom: 1.4rem;
-        position: absolute;
-        left: 4.8rem;
     }
     
     p {
-        bottom: 1.4rem;
-        position: absolute;
-        right: 2rem;
         font-family: 'Inter', sans-serif;
         font-weight: 500;
         font-size: 1.4rem;
         line-height: 1.7rem;
         letter-spacing: -0.02em;     
         color: #ffffff80;
-
     }
 }

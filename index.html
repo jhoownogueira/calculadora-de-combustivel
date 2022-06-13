@@ -16,25 +16,29 @@
         <div class="calculadora">
             <div class="consumo">
                 <h2>Calcular consumo</h2>
-                <div class="inputs input-litros">
-                    <div class="icon">
-                        <img src="img/litros.svg" alt="Icone de combustível">
+                <div class="inputs">
+                    <div class="left">
+                        <div class="icon">
+                            <img src="img/litros.svg" alt="Icone de combustível">
+                        </div>
+                        <input type="number" name="litros" class="input input-litros" id="litros" placeholder="Litros" onkeyup="calcularResultado()">
                     </div>
-                    <input type="number" name="litros" class="input input-litros" id="litros" placeholder="Litros" onkeyup="calcularResultado()">
                     <label for="litro">Lt</label>
                 </div>
-                <div class="inputs input-distancia">
-                    <div class="icon">
-                        <img src="img/distancia.svg" alt="Icone de distancia">
+                <div class="inputs">
+                    <div class="left">
+                        <div class="icon">
+                            <img src="img/distancia.svg" alt="Icone de distancia">
+                        </div>
+                        <input type="number" name="distancia" class="input input-distancia" id="distancia" placeholder="Distância" onkeyup="calcularResultado();">
                     </div>
-                    <input type="number" name="distancia" class="input input-distancia" id="distancia" placeholder="Distância" onkeyup="calcularResultado();">
                     <label for="distancia">Km</label>
                 </div>
-                <div class="inputs input-resultado">
-                    <div class="icon">
-                        <img src="img/ficha carro.svg" alt="Icone de ficha de carro">
-                    </div>
-                    <div>
+                <div class="inputs">
+                    <div class="left">
+                        <div class="icon">
+                            <img src="img/ficha carro.svg" alt="Icone de ficha de carro">
+                        </div>
                         <input type="text" class="input input-resultado" name="resultado" readonly id="resultado-media" value='0' />
                     </div>
                     <label>Km/l</label>
@@ -42,36 +46,36 @@
             </div>
             <div class="preferencia-comb">
                 <h2>Preferência de combustível</h2>
-                <div class="inputs input-gasolina">
-                    <div class="icon">
-                        <img src="img/G.svg" alt="Icone de Gasolina">
+                <div class="inputs">
+                    <div class="left">
+                        <div class="icon">
+                            <img src="img/G.svg" alt="Icone de Gasolina">
+                        </div>
+                        <input type="number" name="gasolina" class="input input-gasolina"  id="gasolina" placeholder="Preço Gasolina" onkeyup="calcularResultadoPreco()">
                     </div>
-                    <input type="number" name="gasolina" class="input input-gasolina"  id="gasolina" placeholder="Preço Gasolina" onkeyup="calcularResultadoPreco()">
-                    <label for="gasolina">R$</label>
+                    <label>R$</label>
                 </div>
-                <div class="inputs input-alcool">
-                    <div class="icon">
-                        <img src="img/E.svg" alt="Icone de Alcool">
+                <div class="inputs">
+                    <div class="left">
+                        <div class="icon">
+                            <img src="img/E.svg" alt="Icone de Alcool">
+                        </div>
+                        <input type="number" name="alcool" class="input input-alcool" id="alcool" placeholder="Preço Álcool" onkeyup="calcularResultadoPreco()">
                     </div>
-                    <input type="number" name="alcool" class="input input-alcool" id="alcool" placeholder="Preço Álcool" onkeyup="calcularResultadoPreco()">
-                    <label for="alcool">R$</label>
+                    <label>R$</label>
                 </div>
-                <div class="inputs input-preferencia">
-                    <div class="icon">
-                        
+                <div class="inputs">
+                    <div class="left">
+                        <div class="icon">  
+                        </div>
                     </div>
                     <input type="text" name="preferencia" class="input input-preferencia" id="resultado-preco">
-
                 </div>
             </div>
             <button id="btn-reset">Reset</button>
 
-            </div>
         </div>
-
     </section>
-    
-
     <script src="js/index.js"></script>
 </body>
 </html>
