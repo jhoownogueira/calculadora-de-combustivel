@@ -21,7 +21,7 @@
         color: #ffffffcc;
         font-family: 'Inter', sans-serif;
         font-weight: 500;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 1.7rem;
         letter-spacing: -0.02em;
         background: transparent;
@@ -37,6 +37,9 @@
         &.alcool {
             color: #0abf04;
             font-weight: 700;
+        }
+        &.input-preferencia {
+            padding-left: 1.2rem;
         }
     }
 
@@ -79,14 +82,6 @@ input[type=number] {
         width: 2.4rem;
         height: 2.4rem;
     }
-    #resultado-media {
-        font-family: 'Inter', sans-serif;
-        font-weight: 500;
-        font-size: 1.4rem;
-        line-height: 1.7rem;
-        letter-spacing: -0.02em;
-    }
-    
     p {
         font-family: 'Inter', sans-serif;
         font-weight: 500;
